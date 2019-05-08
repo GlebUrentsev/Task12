@@ -26,7 +26,7 @@ namespace Zadacha12
             }
         }
 
-        static void CountSort(int[] array)
+        static void CountSort(int[] array)// сортровка методом подсчета
         {
             int maxValue = array.Max<int>();
             int[] c = new int[maxValue];
@@ -75,8 +75,8 @@ namespace Zadacha12
         {
             #region 1 сортировка
             print("Сортирвока методом вставки");
-            int[] array = { 4, 1, 5, 1, 1 };
-            //makeRand(array);
+            int[] array = { 4, 1, 5, 1, 1,0 };
+            makeRand(array);
             print(array);
             SortVstavka(array);
             Console.WriteLine("");
@@ -88,13 +88,13 @@ namespace Zadacha12
 
             // #region 2 сортировка
             print("Сортирвока методом вставки");
-            int[] array2 = { 4, 1, 5, 5, 1 };
-            //makeRand(array);
+            int[] array2 = { 4, 1, 5, 5, 1,2 };
+            makeRand(array);
             print(array2);
             CountSort(array2);
             Console.WriteLine("");
             print(array2);
-            Console.WriteLine($"\nКоличество перестановок в 1-ой сортировке = {countP}");
+            Console.WriteLine($"\nКоличество перестановок в 2-ой сортировке = {countP}");
             // #endregion
         }
     }
